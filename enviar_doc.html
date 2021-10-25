@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Enviar documentos</title>
+      <!-- Bulma  -->
+      <link rel="stylesheet" href="css/main.min.css">
+      <!-- Fonts -->
+      <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+   </head>
+   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+   </head>
+   <body class="has-background-dark">
+      <section class="hero is-primary is-fullheight has-background-grey-lighter">
+         <div class="hero-body">
+            <div class="container">
+               <div class="columns is-5-tablet is-4-desktop is-3-widescreen">
+                  <div class="column">
+                     <form class="box" id = "form_aluno" enctype="multpart/form-data" method="post">
+                        <div class="field has-text-centered">
+                           <img src="img/marca.png" width="167">
+                        </div>
+                        <div class="field is-horizontal">
+                           <div class="field-label is-normal">
+                              <label class="label">Nome</label>
+                           </div>
+                           <div class="field-body">
+                              <div class="field">
+                                 <p class="control is-expanded has-icons-left">
+                                    <input class="input" name = "nome" required id= "nome" type="text" placeholder="Seu nome">
+                                    <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                    </span>
+                                 </p>
+                              </div>
+                              <div class="field">
+                                 <p class="control is-expanded has-icons-left has-icons-right">
+                                    <input class="input is-success" type="email" name="email" placeholder="Email_aluno@instituto.com" >
+                                    <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                    </span>
+                                    <span class="icon is-small is-right">
+                                    <i class="fas fa-check"></i>
+                                    </span>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="field is-horizontal">
+                           <div class="field-label">
+                           <label class="label">Matrícula</label>
+                           </div>
+                           <div class="field-body">
+                              <div class="field is-expanded">
+                                 <div class="field has-addons">
+                                    <p class="control is-expanded">
+                                       <input class="input" type="number" required name="matricula" placeholder="Número de matrícula">
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="field is-horizontal">
+                           <div class="field-label is-normal">
+                              <label class="label">Curso</label>
+                           </div>
+                           <div class="field-body">
+                              <div class="field">
+                                 <div class="control">
+                                    <input class="input " type="text" required placeholder="Digite aqui seu curso" name="curso">
+                                 </div>
+                                
+                              </div>
+                           </div>
+                        </div>
+                        <div class="field is-horizontal">
+                           <div class="field-label is-normal">
+                              <label class="label">Documento</label>
+                           </div>
+                           <div class="field-body">
+                              <div class="field">
+                                 <div class="control">
+                                    <div class="field file">
+                                       <label class="upload control">
+                                       <a class="button is-primary">
+                                       <span class="icon"><i class="mdi mdi-upload"></i></span>
+                                       <span>Selecionar um documento</span>
+                                       </a>
+                                       <input type="file" name = "arquivo" required accept="image/*, application/pdf,  application/docx">
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="field is-horizontal">
+                           <div class="field-label">
+
+                           </div>
+                           <div class="field-body">
+                              <div class="field">
+                                 <div class="control">
+                                    <button class="button is-primary" type="submit" >
+                                    Enviar
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Carregar os scripts -->
+      
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script type="text/javascript" src="js/main.min.js"></script>
+      <script type="text/javascript" src="js/formaluno.js"></script>
+
+
+
+      
+  <script> 
+
+  </script>
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
+   </body>
+</html>
